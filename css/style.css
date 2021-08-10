@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&Benne&display=swap&family=Roboto:ital,wght@0,400;1,900&display=swap');
+
+
+body{
+	font-family: 'Roboto', sans-serif;
+	margin: 0 auto;
+}
+
+nav{
+	/*background-color: #131313;*/
+	
+	background: rgba(0, 0, 0, 0.6);
+	z-index: 10;
+	position: absolute;
+	transition: 0.3s;
+}
+
+.fliter{
+	z-index: 5;
+	position: absolute;
+	height: 100vh;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+.centertext{
+position: absolute;
+top: 20%;
+left: 10vw;
+right: 10vw; 
+z-index: 5;
+text-align: center;
+}
+
+
+.carousel-item img{
+	height: 100vh;
+}
+
+.carousel-item{
+	height: 100vh;
+}
+
+.carousel{
+	height: 100vh;
+}
+
+.centertext h1{
+	font-family: 'Benne', serif;
+	color: white;
+	text-shadow:5px 4px 5px #000000;
+}
+
+.centertext h3{
+	font-family: 'Benne', serif;
+	color: white;
+
+	text-shadow:5px 4px 5px #000000;
+}
+
+.centertext h4{
+	font-family: 'Benne', serif;
+	color: white;
+
+	text-shadow:5px 4px 5px #000000;
+}
+
+.centertext p{
+	font-style: 20px;
+	color: white;
+	text-shadow:5px 4px 5px #000000;
+}
+
+.contactusbtn{
+	background-color: #CF6439;
+}
+
+.contactusbtn:hover{
+	background-color: #AE6B54;
+}
+
+.corange a{
+	color: #FFFFFF;
+	transition: 0.3s;
+	font-weight: bold;
+	text-shadow:5px 4px 5px #000000;
+}
+
+.corange a:hover{
+	color: #3C9ED5;
+	font-weight: bold;
+	text-shadow:5px 4px 5px #000000;
+}
+
+.txtorange{
+	color: #CF6439;
+	font-style: 50px;
+	font-weight: bold;
+	font-family: 'Hammersmith One', sans-serif;
+}
+
+.txtblue{
+	color: #CF6439;
+	font-style: 50px;
+	font-weight: bold;
+	font-family: 'Hammersmith One', sans-serif;
+}
+
+.sub{
+	font-weight: bold;
+	color: #2F2F2F;
+}
+
+
+
+.crtarget{
+	cursor: pointer;
+}
+
+.crtarget i{
+	transition: 0.3s;
+	font-size: 100px;
+	margin-top: 35px;
+
+}
+
+.crtarget:hover{
+	color: #CF6439;
+	box-shadow: -1px 0px 5px #CF6439;
+}
+
+.fazul{
+	z-index: 9;
+	background-color: #0080D0;
+	color: white;
+	box-shadow: -1px 0px 3px #000000;
+}
+
+.header-nav{
+    background: rgba(0, 0, 0, 0.6);
+	z-index: 10;
+	position: absolute;
+    
+}
+
+.header-nav-scrolled{
+    transition: 0.3s;
+    position: fixed;
+    top: 0%;
+    background: rgba(0, 0, 0, 1);
+    -webkit-box-shadow: 0px 0px 11px -2px #000000; 
+    box-shadow: 0px 0px 11px -2px #000000;
+    z-index: 10;  
+}
+
+
+.modalstyle h4{
+	color: #CF6439;
+	font-weight: bold;
+	font-family: 'Hammersmith One', sans-serif;
+}
+
+.modalstyle p{
+	color: #494949;
+	text-align: justify;
+  	text-justify: inter-word;
+}
+
+.bg1{
+	background-image: url(img/bg1.png) !important;
+}
+
+.box{
+	box-shadow: 0px -1px 5px #000000;
+}
+
+.formulario{
+	color: white;
+}
+
+.formconfig{
+	text-shadow:-1px 0px 3px #000000;
+	color: #CF6439;
+	font-weight: bold;
+	font-family: 'Hammersmith One', sans-serif;
+	text-align: center;
+}
+
+.btnblue{
+	background-color: #CF6439;
+	margin: auto; 
+	text-align: center;
+}
+
+.btnblue:hover{
+	background-color: #AE6B54;
+}_
+.modal { width: 75% !important ; height: 90% !important ; } 
+
+
+.msg-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: stretch;
+    align-items: center;
+    }
+
+.msg-item:nth-child(1) {
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+    }
+
+.cover{
+	object-fit: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+.cookies{
+	position: fixed;
+	bottom: 0%;
+	left: 0%;
+	right: 0%;
+	top: 80%;
+}

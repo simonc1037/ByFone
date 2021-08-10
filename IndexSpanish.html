@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>ByFone SAS - Externalización de Procesos de Negocio</title>
+  <meta name="description" content="Learn how our business process outsourcing helps you grow your brand by providing staffing solutions and supplementing your support network.">
+  <!--Import Google Icon Font-->
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/min.style.css">
+  <script type="text/javascript" src="js/app.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
+  <script type="text/javascript" src="js/min.core.js"></script>
+  <script type="text/javascript" src="js/min.bases.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('.collapsible').collapsible();
+    });
+  </script>
+
+  <link rel="icon" type="image/png" href="img/FULL COLOR.png" sizes="64x64">
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body style="background-image: url('img/bg1.png');">
+  <section id="home"></section>
+
+  <a target="_blank"
+    href="https://api.whatsapp.com/send?phone=+573148452243&amp;text=Hi! I would like to make an appointment to know more about ByFone. ">
+    <img src="img/Recurso1.png" alt="WhatsApp Logo"
+      width="80px" style="position: fixed; bottom: 2%; right: 2%; z-index: 99" /></a>
+
+
+  <nav style="height: 80px">
+    <a href="#" class="brand-logo">&nbsp;&nbsp;&nbsp;<img src="img/Recurso5.png" alt="This is the company logo" width="100"></a>
+    <div class="container">
+      <div class="nav-wrapper">
+
+        <a data-target="mobile-demo" class="hide-on-large-only" id="menu1" onclick="toggle()"><i class="material-icons"
+            style="font-size: 50px;margin-top: 15px">menu</i></a>
+        <a data-target="mobile-demo" class="hide-on-large-only hide close" id="menu2" onclick="toggle()"><i
+            class="material-icons" style="font-size: 50px;margin-top: 15px">close</i></a>
+
+
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li class="corange"><a href="#home"><b>Inicio</b></a></li>
+          <li class="corange"><a href="#ourservices">Servicios</a></li>
+          <li class="corange"><a href="#clients">Clientes</a></li>
+          <li class="corange"><a href="#career">Trabaja con Nosotros</a></li>
+          <!--li class="corange"><a href="collapsible.html">Blog</a></li-->
+          <li class="corange"><a href="#contactus">Contáctanos</a></li>
+		  <li class="corange"><a href="#home" class='dropdown-trigger'  data-target='dropdown1'>EN</a></li>
+      <li class="corange"><a href="#home" class='dropdown-trigger'  data-target='dropdown1'>ESP</a></li>
+        </ul>
+      </div>
+    </div>
+
+
+ <script>
+  function translates(idioma) {
+    switch (idioma) {
+      case "EN":
+        window.location.href = "https://www.byfone.com/index2.html";
+        break;
+      case "ES":
+        window.location.href = "https://www.byfone.com/index.html/";
+        break;
+    }
+  }
+</script>
+
+<script type="text/javascript" src="js/menu.js"></script>
+<div class="collection hide" id="menu" style="background-color:  rgba(0, 0, 0, 0.5);">
+  <a href="https://www.byfone.com/#home" class="collection-item" onclick="menu('hide')"
+    style="color: #fff;background-color:  rgba(0, 0, 0, 0.5);">Inicio</a>
+  <a href="https://www.byfone.com/#ourservices" class="collection-item" onclick="menu('hide')"
+    style="color: #fff;background-color:  rgba(0, 0, 0, 0.5);">Servicios</a>
+  <a href="https://www.byfone.com/works" class="collection-item" onclick="menu('hide')"
+    style="color: #fff;background-color:  rgba(0, 0, 0, 0.5);">Clientes</a>
+  <a href="https://www.byfone.com/##contactus" class="collection-item" onclick="menu('hide')"
+    style="color: #fff;background-color:  rgba(0, 0, 0, 0.5);">Contáctanos</a>
+    <a href="https://www.byfone.com/##career" class="collection-item" onclick="menu('hide')"
+    style="color: #fff;background-color:  rgba(0, 0, 0, 0.5);">Trabaja con Nosotros</a>
+
+  <a class='dropdown-trigger' data-target='dropdown1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ENG</a>
+</div>
+</nav>
+
+<ul id='dropdown1' class='dropdown-content'>
+  <li>
+    <h4 onclick="translates('EN')">ENG</h4>
+  </li>
+  <li>
+    <h4 onclick="translates('ES')">ESP</h4>
+  </li>
+</ul>
+
+
+
+
+
+
+<!-- Dropdown Trigger -->
+
+
+<!-- Dropdown Structure -->
+<ul id='dropdown1' class='dropdown-content'>
+  <li><a href="#!">one</a></li>
+  <li><a href="#!">two</a></li>
+  <li class="divider" tabindex="-1"></li>
+  <li><a href="#!">three</a></li>
+  <li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
+  <li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
+</ul>
+
+
+
+
+
+
+  <div class="carousel carousel-slider center">
+    <div class="carousel-fixed-item center">
+    </div>
+
+    <div class="carousel-item white-text" href="#one!">
+
+      <div class="centertext" data-aos="fade-up">
+        <div class="hide-on-med-and-down"><br><br><br></div>
+        <h4>Complementamos su actual red de apoyo con servicios y soluciones de alta calidad que se ajustan a su presupuesto y expectativas.</h4>
+        <br> <br>
+        <a href="#contactus" class="btn waves-effect  white-text darken-text-2 contactusbtn btn-large"
+          data-aos="fade-up" style="border-radius: 25px">Contáctanos</a>
+      </div>
+
+      <img src="img/women-1209678.jpg" alt="Soluciones para Contact Center" style="
+      object-fit: cover;
+  width: 100%;
+  height: 100vh;">
+    </div>
+    <div class="carousel-item white-text" href="#two!">
+
+
+      <div class="centertext" data-aos="fade-up">
+        <div class="hide-on-med-and-down"><br><br><br></div>
+        <h4>Empiece a crecer su negocio al trabajar con nosotros. Proporcionamos las soluciones de personal necesarias que su empresa necesita ahora mismo.
+        </h4>
+        <p></p>
+        <br> <br>
+        <a href="#whybyfone" class="btn waves-effect  white-text darken-text-2 contactusbtn btn-large"
+          data-aos="fade-up" style="border-radius: 25px">Conoce Cómo</a>
+      </div>
+
+
+      <img src="img/stock-1863880.jpg" alt="Soluciones a la medida para clientes" style="
+      object-fit: cover;
+  width: 100%;
+  height: 100vh;">
+    </div>
+    <div class="carousel-item white-text" href="#three!">
+
+
+
+      <div class="centertext" data-aos="fade-up">
+        <div class="hide-on-med-and-down"><br><br><br></div>
+        <h4>Construye tu carrera junto a nosotros. Buscamos gente como tú, nuestro equipo es un gran lugar para crecer continuamente y cumplir tus objetivos profesionales</h4>
+
+        <br> <br>
+        <a href="#workwithus" class="btn waves-effect  white-text darken-text-2 contactusbtn btn-large"
+          data-aos="fade-up" style="border-radius: 25px">Trabaja con Nosotros</a>   
+      </div>
+
+
+      <img src="../img/office-865091.jpg" alt="Back office solutions" style="
+      object-fit: cover;
+  width: 100%;
+  height: 100vh;">
+    </div>
+
+
+  </div>
+
+  <section id="ourservices">&nbsp;</section>
+
+  <br>
+
+
+  <div class="container">
+    <h3 class="center" data-aos="fade-up"><span class="txtorange">NUESTROS</span> <span class="txtorange">SERVICIOS</span>
+    </h3>
+    <h6 class="center sub" data-aos="fade-up">Apoyamos el progreso diario de su negocio mediante soluciones a la medida relacionadas con procesos de externalización (Outsourcing). Nuestro personal está bien formado y es capaz de afrontar cualquier reto. El hecho de ser bilingües nos da ventaja en el mercado, no se deje atrapar por las barreras lingüísticas, deje que nosotros nos encarguemos de ello..</h6>
+    <p class="center"></p>
+  </div>
+  <br>
+  <div class="row container">
+
+    <div class="col s12 m3">
+      <div class="card crtarget modal-trigger" data-aos="fade-right" href="#modal1">
+        <div class="card-content">
+          <span class="card-title center"><i class="material-icons">support_agent</i></span>
+          <p class="center">Contact Center</p><br>
+        </div>
+      </div>
+    </div>
+
+    <div class="col s12 m3">
+      <div class="card crtarget modal-trigger" data-aos="fade-up" href="#modal2">
+        <div class="card-content">
+          <span class="card-title center"><i class="material-icons">insights</i></span>
+          <p class="center">Soluciones en Marketing Digital</p>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="col s12 m3">
+      <div class="card crtarget modal-trigger" data-aos="fade-right" href="#modal3">
+        <div class="card-content">
+          <span class="card-title center"><i class="material-icons">person_add</i></span>
+          <p class="center">Contratación de Talentos</p>
+
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col s12 m3">
+      <div class="card crtarget modal-trigger" data-aos="fade-right" href="#modal4">
+        <div class="card-content">
+          <span class="card-title center"><i class="material-icons">notification_important</i></span>
+          <p class="center">Servicios de Transición/Emergencia</p>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <section id="whybyfone"></section>
+  <br><br>
+
+  <div class="row hide-on-med-and-up">
+    <div class="col s12 m12">
+      <div class="card" style="background-color: #363636">
+        <div class="card-content">
+
+          <center>
+            <h3 style="color: #CF6439;font-weight: bold;">¿Por qué elegir a ByFone?</h3>
+            <h6 style="color: #888888">Estamos comprometidos a construir relaciones sólidas y duraderas con nuestros clientes.</h6>
+          </center>
+          <br><br>
+          <h6 style="color: #888888"><b>Trabajar con nosotros le permitirá:</b></h6>
+          
+          <li style="color: #fff">Ahorrar tiempo en los procesos. </li>
+          <li style="color: #fff">Ser rentables.</li>
+          <li style="color: #fff">Agilizar su proceso de negocio.</li>
+          <li style="color: #fff">Mejorar la satisfacción del cliente.</li>
+          <li style="color: #fff">Construir alianzas estratégicas.</li>
+          <li style="color: #fff">Tener más tiempo para enfocarse en sus tareas principales.</li>
+          <br><br>
+          <center>
+            <a class="waves-effect waves-light btn btnblue" data-aos="fade-right" href="#contactus">Contáctanos</a>
+          </center>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section hide-on-med-and-down" style="background-color: #363636; color: white">
+    <div class="row">
+      <br>
+
+      <div class="row container">
+        <div class="col s12 m4 ">
+
+          <img src="../img/whychoosebyfone.png" alt="Personas celebrando un contrato" class="hide-on-med-and-down" width="600px"
+            style="position: relative;right: 230px; top: 62px">
+
+        </div>
+        <div class="col s0 m1">
+          &nbsp;
+
+        </div>
+        <div class="col s12 m7"><br><br>
+          <center>
+            <h2 data-aos="fade-up" style="text-align: center; color: #CF6439"><b>¿Por qué elegir a ByFone?</b></h2>
+          </center>
+          <h6 data-aos="fade-up" style="color: #888888">Estamos comprometidos a construir relaciones sólidas y duraderas con nuestros clientes.
+          </h6>
+          <br>
+          <h6 data-aos="fade-up" style="color: #888888"><b>Trabajar con nosotros le permitirá:</b></h6>
+          <br>
+          <li data-aos="fade-left">Ahorrar tiempo en los procesos.</li>
+          <li data-aos="fade-left">Ser rentable.</li>
+          <li data-aos="fade-left">Agilizar su proceso de negocio.</li>
+          <li data-aos="fade-left">Mejorar la satisfacción del cliente.</li>
+          <li data-aos="fade-left">Construir alianzas estratégicas.</li>
+          <li data-aos="fade-left">Tener más tiempo para enfocarse en sus tareas principales.</li>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <section id="clients"></section>
+  <br><br><br><br>
+  <div class="container">
+    <h3 class="center" data-aos="fade-up"><span class="txtorange">NUESTROS</span> <span class="txtorange">CLIENTES</span></h3>
+    <h6 class="center sub" data-aos="fade-up">El personal de ByFone, diverso y multilingüe, está formado y capacitado para prestar apoyo a una serie de sectores que van desde la industria de servicios hasta gestión inmobiliaria y bienes raíces.</h6><br><br>
+    <p class="center"></p>
+  </div>
+
+
+  <div class="row">
+    <div class="col s12 m6">
+      <div class="card z-depth-3">
+        <div class="card-image">
+          <img src="../img/h2.jpg" alt="Logo de Home Solutions Real Estate Group" ><br class="hide-on-med-and-up"><br class="hide-on-med-and-up">
+          <span class="card-title" style="color:#363636;">Home Solutions Real Estate Inc.</span>
+        </div>
+        <div class="card-content">
+          <p>Durante el inicio de la epidemia de COVID-19, Home Solutions Real Estate Management Inc. (una empresa inmobiliaria con sede en Nueva York) se dirigió a ByFone en busca de una solución basada en el IVR y correo electrónico para abordar las preocupaciones de los inquilinos relacionadas con la propiedad y los proyectos de desarrollo empresarial existentes.  ByFone respondió ofreciendo al cliente una solución IVR que resolviera todas las preocupaciones y solicitudes de los inquilinos, la programación del mantenimiento de la propiedad y el desarrollo del negocio durante la pandemia COVID-19 y las operaciones por satélite. <br><br>
+            Nuestra solución tuvo éxito porque empleamos a nuestros asociados del centro de llamadas para atender las emergencias inmediatas y aprovisionar nuestra infraestructura tecnológica para avanzar en los nuevos negocios y adquisiciones para progresar en el apoyo a las ventas.</p>
+        </div>
+        <div class="card-action">
+          <a href="#" style="color:#0080D0;"><b></b></a>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="col s12 m6">
+      <div class="card z-depth-3">
+        <div class="card-image">
+          <img src="../img/h1.jpg" alt="Logo de Right Home Realty" >
+          <span class="card-title">Right Home Realty Inc.</span>
+        </div>
+        <div class="card-content">
+          <p>Right Home Realty (una empresa inmobiliaria con sede en Nueva York) buscó la ayuda de ByFone para apoyar las ventas y adquisiciones de propiedades relacionadas con clientes nuevos y existentes.
+
+            ​
+            <br><br>
+            Al identificar adecuadamente los requisitos de Right Home Realty, ByFone dotó de personal a un equipo de asociados multilingües para proporcionar a Right Home Realty un apoyo directo a las ventas a través del centro de llamadas que no sólo realizó un seguimiento y midió todas las métricas de los KPI, sino que también contribuyó directamente a la presencia y expansión en el mercado. 
+
+            ​
+            <br><br>
+            Trabajar con ByFone no sólo satisfizo las expectativas iniciales de Right Home Realty, sino que también amplió su negocio y ofreció un grado de apoyo a las ventas que superó a sus competidores.      
+                
+          </p>
+        </div>
+        <div class="card-action">
+          <a href="https://www.rhrealtynyc.com/" target="_blank" style="color:#0080D0;"><b>Visit website</b></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <section id="workwithus"></section>
+  <br><br><br>
+
+  <div class="row hide-on-med-and-up">
+    <div class="col s12 m12">
+      <div class="card" style="background-color: #363636">
+        <div class="card-content">
+
+          <center>
+            <h3 style="color: #CF6439;font-weight: bold;">Trabaja con Nosotros</h3>
+            <h6 style="color: #888888">¿Consideras que tu perfil es compatible con lo que buscamos? Aplica ahora.</h6>
+          </center>
+          <br><br>
+          <p style="color: #888888">Posiciones disponibles</p><br>
+          <li style="color: #fff">Agente de Servicio al Cliente</li>
+          <li style="color: #fff">Reclutador Ejecutivo </li>
+          <li style="color: #fff">Agente de Ventas</li>
+          <li style="color: #fff">Agente de Call Center </li>
+          <br><br>
+          <center>
+            <a class="waves-effect waves-light btn modal-trigger btnblue" data-aos="fade-right" href="#Workwithus">Apply
+              now</a>
+          </center>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="z-depth-1 hide-on-med-and-down" style="background-color: #363636; color: white">
+    <div class="row  container">
+      <br>
+      <div class="col s12 m6">
+        <br><br>
+        <br><br>
+        <div class="">
+          <hr class="left" width="10%" style="border: 1px solid #CF6439;"><br>
+          <h4 style="text-align: center; color: #CF6439; font-weight: bold; font-size: 50px" data-aos="fade-up">Trabaja Con Nosotros</h4>
+          <h6 style="color: #888888">¿Consideras que tu perfil es compatible con lo que buscamos? Aplica ahora.</h6> <br><br>
+          <p data-aos="fade-left" style="color: #888888">Posiciones disponibles</p>
+          <li>Agente de Servicio al Cliente </li>
+          <li>Reclutador Ejecutivo </li>
+          <li>Agente de Ventas</li>
+          <li>Agente de Call Center </li>
+        </div>
+        <br><br><br>
+
+        <center>
+          <a class="waves-effect waves-light btn modal-trigger btnblue" data-aos="fade-right" href="#Workwithus">Apply
+            now</a>
+        </center>
+        <br><br><br>
+      </div>
+
+      <div class="col s12 m6">
+        <img src="../img/Work_wit.png" alt="Grupo de gente" class="hide-on-med-and-down" width="100%">
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <br class="hide-on-med-and-down"><br class="hide-on-med-and-down">
+
+
+
+  <section id="contactus"></section><br><br>
+  <div>
+
+    <h3 class="center" data-aos="fade-up"><span class="txtorange">PONTE EN </span> <span class="txtorange">CONTACTO</span>
+    </h3>
+    <h6 class="center sub" data-aos="fade-up">Nos gustaría saber de ti. Deja tus datos de contacto abajo para consultar por cualquier solución de tu interés.</h6>
+
+    <br class="">
+
+    <div class="row" style="background-color: #494949">
+      <div class="col s12 m12">
+        <div class="container">
+
+          <div class="row">
+
+            <div class="input-field col s6">
+              <input id="First_name" type="text" class="validate" style="color: white" required>
+              <label for="First_name">Nombre</label>
+            </div>
+
+            <div class="input-field col s6">
+              <input id="last_name" type="text" class="validate" style="color: white" required>
+              <label for="last_name">Apellido</label>
+            </div>
+
+            <div class="input-field col s12">
+              <input id="Company" type="text" class="validate" style="color: white" required>
+              <label for="Company">Empresa</label>
+            </div>
+
+            <div class="input-field col s6">
+              <input id="Email" type="email" class="validate" style="color: white" required>
+              <label for="Email">Email</label>
+            </div>
+
+            <div class="input-field col s2">
+              <select class="form-control" id="pais" id="exampleFormControlSelect1"
+                style="width: 100%;padding-top: 10px; padding-bottom: 10px;">
+                <option style="color: white" style="color: white !important">Indicativo</option>
+                <option value="+1">+1</option>
+                <option value="+54">+54</option>
+                <option value="+55">+55</option>
+                <option value="+56">+56</option>
+                <option value="+57">+57</option>
+                <option value="+506">+506</option>
+                <option value="+593">+593</option>
+                <option value="+503">+503</option>
+                <option value="+502">+502</option>
+                <option value="+504">+504</option>
+                <option value="+52">+52</option>
+                <option value="+505">+505</option>
+                <option value="+507">+507</option>
+                <option value="+595">+595</option>
+                <option value="+51">+51</option>
+                <option value="+1787">+1787</option>
+                <option value="+58">+58</option>
+              </select>
+            </div>
+            <div class="input-field col s4">
+              <input id="Phone" type="number" class="validate" min="10" style="color: white" required>
+              <label for="Phone">Teléfono</label>
+            </div>
+
+
+            <div class="input-field col s12">
+              <textarea id="textarea" class="materialize-textarea" style="color: white" required></textarea>
+              <label for="textarea">Especifica tu inquietud</label>
+            </div>
+
+            <h5 style="text-shadow:-1px 0px 3px #000000;
+  color: #CF6439;
+  font-weight: bold;
+  font-family: 'Hammersmith One', sans-serif;
+  text-align: center;">Selecciona la solución de tu interés</h5>
+
+            <p>
+
+              <center>
+                <label>
+                  <input id="sh1" type="checkbox" class="filled-in" value="Inbound Voice Call Center" />
+                  <span>Call Center: Llamada Saliente</span>
+                </label>&nbsp;&nbsp;&nbsp;
+                <label>
+                  <input id="sh2" type="checkbox" class="filled-in" value="Product Support" />
+                  <span>Soporte de Producto</span>
+                </label>
+                <label>&nbsp;&nbsp;&nbsp;
+                  <input id="sh3" type="checkbox" class="filled-in" value="Outbound Voice Call Center" />
+                  <span>Call Center: Llamada Entrante</span>
+                </label>
+                <label>&nbsp;&nbsp;&nbsp;
+                  <input id="sh4" type="checkbox" class="filled-in" value="24 Hour IVR & Email Response Services" />
+                  <span>Respuesta 24 Horas de IVR & Email</span>
+                </label>
+                <label>&nbsp;&nbsp;&nbsp;
+                  <input id="sh5" type="checkbox" class="filled-in" value="Transitional and Emergency Service" />
+                  <span>Servicios de Emergencia o Transición</span>
+                </label>
+                <label>&nbsp;&nbsp;&nbsp;
+                  <input id="sh6" type="checkbox" class="filled-in" value="Digital Marketing Solutions" />
+                  <span>Soluciones en Marketing Digital</span>
+                </label>
+                <label>&nbsp;&nbsp;&nbsp;
+                  <input id="sh7" type="checkbox" class="filled-in" value="Recruitment and Talent Acquisition" />
+                  <span>Contratacón de Talentos</span>
+                </label>
+
+              </center>
+
+            </p>
+
+           
+            <br>
+            <center><button class="btn waves-effect waves-light btnblue modal-trigger" href="#contactresponse"
+                onclick="send()" name="action">Enviar
+              </button></center>
+              <center>
+                <p style="color: grey">Al dar click en 'Enviar' estás aceptando nuestras Políticas de Privacidad</p>
+              </center>
+
+
+
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div id="modal1" class="modal modal-fixed-footer" style="background-image: url(../img/bg1.png);">
+    <div class="modal-content modalstyle">
+      <h4>Contact Center</h4><br>
+      <div class="row">
+        <div class="col s12 m6">
+
+          <p>Entendemos que hay algunas tareas para las que su red de apoyo no está preparada o no está capacitada para cumplir. Nuestro equipo le va a quitar esa responsabilidad de encima y le va a permitir centrarse en las cosas reales que su negocio está preparado para realizar y que realmente pertenecen a sus competencias principales.</p>
+
+
+
+          <ul class="collapsible">
+            <li>
+              <div class="collapsible-header"><i class="material-icons" style="color: #CF6439">mail</i>Centro de Atención a Llamadas Entrantes</div>
+              <div class="collapsible-body"><span>Permítanos ser su línea exclusiva de atención al cliente para recibir cualquier llamada respectiva con consultas, preguntas, quejas, sugerencias o cualquier asistencia relacionada con su servicio o producto.</span></div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="material-icons" style="color: #CF6439">headset_mic</i>Centro de Llamadas de Voz Salientes</div>
+              <div class="collapsible-body"><span>Si necesita una fuerza de ventas para respaldar su producto, ByFone cuenta con el personal idóneo para ayudarle de cualquier manera posible. Desde registro de pedidos hasta la venta cruzada, la venta ascendente y las ofertas de productos. Le ayudamos a conseguir clientes potenciales de calidad con nuestros asociados dedicados a la asistencia de productos.</span></div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="material-icons" style="color: #CF6439">filter_drama</i>Respuesta por Voz Interactiva y Correo 24 Horas</div>
+              <div class="collapsible-body">También proporcionamos a nuestros clientes la opción de respuesta de voz interactiva (IVR) y de correo electrónico las 24 horas del día. Esta herramienta proporciona a nuestros clientes el más alto grado de apoyo las 24 horas del día y es ideal para mantener altos niveles de satisfacción y compromiso con los clientes.</div>
+            </li>
+          </ul>
+
+
+
+
+
+
+
+
+        </div>
+        <div class="col s12 m6">
+          <img class="z-depth-3" src="../img/pexels-pixabay-267507.jpg" alt="Oficina de Call Center vacía" width="100%">
+        </div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat" style="color: #3C9ED5">Close</a>
+    </div>
+  </div>
+
+  <div id="modal2" class="modal modal-fixed-footer" style="background-image: url(../img/bg1.png);">
+    <div class="modal-content modalstyle">
+
+      <h4>Soluciones en Marketing Digital</h4><br>
+      <div class="row">
+        <div class="col s12 m6">
+          <p>¿Tiene problemas para diseñar y ejecutar campañas digitales? Le ofrecemos nuestros servicios de Comunicación Online y Marketing Digital: </p>
+
+
+          <li>SEO/SEM</li>
+          <li>Estrategias de Social Media</li>
+          <li>Community Managers</li>
+          <li>Anuncios en Redes Sociales</li>
+          <li>Creación y Curación de Contenidos</li>
+          <li>Campañas de Email Marketing</li>
+          <li>Adquisición de Leads</li>
+
+        </div>
+        <div class="col s12 m6">
+          <img class="z-depth-3" src="../img/pexels-fauxels-3183150.jpg" alt="Gente trabajando en mesa redonda" width="100%">
+        </div>
+      </div>
+
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat" style="color: #3C9ED5">Close</a>
+    </div>
+  </div>
+
+
+  <div id="modal3" class="modal modal-fixed-footer" style="background-image: url(../img/bg1.png);">
+    <div class="modal-content modalstyle">
+      <h4>Contratación y Adquisicón de Talentos</h4><br>
+      <div class="row">
+        <div class="col s12 m6 msg-container">
+          <div class="msg-item">
+            <br>
+            <div class="hide-on-med-and-down">
+              <br><br><br><br>
+            </div>
+            <b>¿Busca a los mejores candidatos para trabajar en su empresa? </b>
+            <br>
+            <p>
+              Le ayudamos a crear perfiles para funciones específicas dentro de su empresa. Déjenos gestionar las tareas de búsqueda del personal adecuado para usted.
+            </p>
+          </div>
+
+        </div>
+        <div class="col s12 m6">
+          <img class="z-depth-3" src="../img/pexels-nappy-935977.jpg" alt="Adquisición de Talent" width="100%">
+        </div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat" style="color: #3C9ED5">Close</a>
+    </div>
+  </div>
+
+
+
+  <div id="modal4" class="modal modal-fixed-footer" style="background-image: url(../img/bg1.png);">
+    <div class="modal-content modalstyle">
+      <h4>Servicios de Transición y Emergencia</h4><br>
+      <div class="row">
+        <div class="col s12 m6">
+          <p>
+            Todas las empresas necesitan un plan de respaldo cuando sus sistemas se caen, pasan por una transición de actualización o están actualmente sobrecargados. ByFone ofrece un Servicio de Transición que ayuda a su empresa durante estos momentos. Si lo solicita, podemos proporcionar una respuesta rápida para satisfacer cualquier necesidad de emergencia durante el periodo de tiempo especificado por nuestros clientes.
+            <br><br>
+            Seremos el punto de contacto de sus clientes cuando su empresa se vea afectada por actualizaciones, transiciones, paradas o diferentes emergencias como paradas relacionadas con el clima, vacaciones o pandemias globales como la COVID-19. En caso de reducción de plantilla, tenemos cubiertas sus necesidades de atención al cliente durante unos días, unas semanas o unos meses mientras su equipo se recupera.
+          </p>
+        </div>
+        <div class="col s12 m6">
+          <img class="z-depth-3" src="../img/shutterstock_766131976_72_psd_0l2cBtu1.png" alt="In Voice Response Services" width="400"
+            style="position: fixed;">
+        </div>
+      </div>
+
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat" style="color: #3C9ED5">Close</a>
+    </div>
+  </div>
+
+
+
+  <div id="contactresponse" class="modal modal-fixed-footer" style="background-image: url(../img/bg1.png);">
+    <div class="modal-content modalstyle">
+      <h4>¡Gracias! Recibimos tu solicitud</h4><br>
+      <div class="row">
+        <div class="col s12 m12">
+          <div class="container">
+
+
+
+            <center><i class="material-icons" style="color: #CF6439; font-size: 150px">check_circle</i></center>
+            <br>
+            <h5 style="
+  color: #494949;
+  font-weight: bold;
+  font-family: 'Hammersmith One', sans-serif;
+  text-align: center;">
+              Pronto tendrá noticias nuestras. Nuestros especialistas procesarán su consulta de inmediato y se pondrán en contacto con usted.
+            </h5>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat" style="color: #3C9ED5">Cerrar</a>
+    </div>
+  </div>
+
+
+  <div id="Workwithus" class="modal modal-fixed-footer" style="background-image: url(../img/bg1.png);">
+    <div class="modal-content modalstyle">
+      <h4>Trabaja con nosotros</h4><br>
+      <div class="row">
+        <div class="col s12 m12">
+          <center>
+            <b>
+              <h5 style="text-align: center">
+
+                <br><br>
+                Queremos conocerte mejor. Envíanos un email a  <span style="color: #3C9ED5; cursor: pointer;"
+                  onclick="email()">support@byfone.com</span> especificando en el asunto tu nombre completo y el puesto deseado.
+                <br><br>
+                Explica brevemente por qué te gustaría trabajar con nosotros y qué puedes aportar al equipo de ByFone. También deberás enviar tu currículum vitae.
+                <br><br>
+                Esperamos tener noticias tuyas.
+              </h5>
+            </b>
+          </center>
+        </div>
+
+      </div>
+
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat" style="color: #3C9ED5">Close</a>
+    </div>
+  </div>
+
+
+
+
+
+
+  <!-- Modal Trigger -->
+
+
+<div id="cookies">
+
+</div>
+
+
+
+
+
+
+
+
+
+  <footer class="page-footer" style="background-color: #494949">
+    <div class="container">
+
+
+      <div class="row ">
+        <div class="col s12 m4 "><br>
+          <h3 style="font-weight: bold;
+  font-family: 'Hammersmith One', sans-serif;
+  color: #888888;
+  text-align: center;">EMPIEZA A HACER CRECER TU NEGOCIO HOY</h3>
+
+        </div>
+        <div class="col s12 m3"><br><br>
+
+        <h5 style="font-weight: bold;
+  font-family: 'Benne', sans-serif;
+  color: #888888;
+  ">ByFone, SAS </h5>
+          <p>
+            Cra 43A # 8 Sur - 15<br>
+            Medellín, Antioquia 050022<br>
+            EMAIL: support@byfone.com<br>
+
+          </p>
+        </div>
+        <div class="col s12 m2">
+          <center>
+          <!--/  foto de el logo footer fondo /-->
+           <br><br> <img src="../img/ESCALA DE GRISES.png" alt="Logo de ByFone" width="100%">
+
+            <h5 style="font-weight: bold;
+  font-family: 'Benne', sans-serif;
+  color: #888888;
+  ">Síguenos</h5>
+            <a href="https://www.facebook.com/ByFone-Inc-104101941916829/?ref=pages_you_manage" target="_blank"><img
+                src="https://img.icons8.com/small/35/ffffff/facebook.png" alt="Facebook Logo" /></a>
+            <a href="https://instagram.com/byfone_inc?utm_medium=copy_link" target="_blank"><img
+                src="https://img.icons8.com/small/35/ffffff/instagram-new.png" alt="Instagram Logo" /></a>
+            <a href="https://www.linkedin.com/company/byfone-inc/mycompany/?viewAsMember=true" target="_blank"><img
+                src="https://img.icons8.com/small/35/ffffff/linkedin.png" alt="LinkedIn Logo" /></a>
+          </center>
+        </div>
+      </div>
+
+
+
+
+    </div>
+    <div class="footer-copyright" style="background-color: #363636;">
+      <div class="container hide-on-med-and-down">
+        © 2021 ByFone Inc.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a class="grey-text right" target="_blank" href="PoliticasPrivacidad.html">Políticas de Privacidad</a>
+        <a class="grey-text" href="#">Términos y Condiciones</a>
+      </div>
+      <div class="container hide-on-large-only">
+        © 2021 ByFone Inc.
+        <a class="grey-text"  target="_blank" href="PoliticasPrivacidad.html">Políticas de Privacidad</a>&nbsp;&nbsp;
+        <a class="grey-text" href="#">T&C</a>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3DXRT3EN3R"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-3DXRT3EN3R');
+
+    
+
+      function setCookie(cname, cvalue, exdays) {
+        const d = new Date();
+        d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+        let expires = "expires=" + d.toUTCString();
+        document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+      }
+
+
+      function getCookie(cname) {
+        let name = cname + "=";
+        let decodedCookie = decodeURIComponent(document.cookie);
+        let ca = decodedCookie.split(';');
+        for (let i = 0; i < ca.length; i++) {
+          let c = ca[i];
+          while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+          }
+          if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+          }
+        }
+        return "";
+      }
+
+      function cook() {
+        setCookie("validate", "true", 9999);
+        alert(getCookie("validate"));
+      }
+      //
+      //acceptcookie()
+      function showcookies() {
+
+        var tarjeta = `
+<div class="card " style="	position: fixed;
+	bottom: 0%;
+	left: 0%;
+	right: 0%;
+	">
+  <div class="card-content ">
+    <span class="card-title">COOKIE POLICIES</span>
+    <p>We use own and third party cookies to improve the user experience through your navigation. If you continue
+      browsing you
+      accept their use. Learn more</p>
+  </div>
+  <div class="card-action">
+    <a onclick="acceptcookie()">accept cookies</a>
+<a href="#">exit</a>
+</div>
+</div>
+`;
+
+        if (getCookie("val") == "") {
+          document.getElementById('cookies').innerHTML = tarjeta;
+          console.log('la cookie existe')
+        }
+      }
+
+      function acceptcookie() {
+        setCookie("val", "true", 9999);
+        document.getElementById('cookies').innerHTML = "";
+        console.log('la cookie se creo')
+      }
+
+
+      showcookies();
+  </script>
+
+
+
+  <!--JavaScript at end of body for optimized loading-->
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+</body>
+
+
+</html>

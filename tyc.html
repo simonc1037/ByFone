@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>ByFone Inc. - Business Process Outsourcing</title>
+  <meta name="description" content="Learn how our business process outsourcing helps you grow your brand by providing staffing solutions and supplementing your support network.">
+  <!--Import Google Icon Font-->
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/min.style.css">
+  <script type="text/javascript" src="js/app.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
+  <script type="text/javascript" src="js/min.core.js"></script>
+  <script type="text/javascript" src="js/min.bases.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('.collapsible').collapsible();
+    });
+  </script>
+
+  <link rel="icon" type="image/png" href="img/FULL COLOR.png" sizes="64x64">
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body style="background-image: url('img/bg1.png');">
+  <section id="home"></section>
+
+  <a target="_blank"
+    href="https://api.whatsapp.com/send?phone=+573148452243&amp;text=Hi! I would like to make an appointment to know more about ByFone. ">
+    <img src="img/Recurso1.png" alt="WhatsApp Logo"
+      width="80px" style="position: fixed; bottom: 2%; right: 2%; z-index: 99" /></a>
+
+
+  <nav style="height: 80px">
+    <a href="#" class="brand-logo">&nbsp;&nbsp;&nbsp;<img src="img/Recurso5.png" alt="This is the company logo" width="100"></a>
+    <div class="container">
+      <div class="nav-wrapper">
+
+        <a data-target="mobile-demo" class="hide-on-large-only" id="menu1" onclick="toggle()"><i class="material-icons"
+            style="font-size: 50px;margin-top: 15px">menu</i></a>
+        <a data-target="mobile-demo" class="hide-on-large-only hide close" id="menu2" onclick="toggle()"><i
+            class="material-icons" style="font-size: 50px;margin-top: 15px">close</i></a>
+
+
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li class="corange"><a href="#home"><b>Home</b></a></li>
+          <li class="corange"><a href="#ourservices">Services</a></li>
+          <li class="corange"><a href="#clients">Clients</a></li>
+          <!--li class="corange"><a href="collapsible.html">Blog</a></li-->
+          <li class="corange"><a href="#contactus">Contact Us</a></li>
+          <li class="corange"><a class='dropdown-trigger' data-target='dropdown1'>ENG</a></li>
+        </ul>
+      </div>
+    </div>
+
+<script>
+  function translates(idioma) {
+    switch (idioma) {
+      case "EN":
+        window.location.href = "https://www.byfone.com/";
+        break;
+      case "ES":
+        window.location.href = "https://www.byfone.com/es/";
+        break;
+    }
+  }
+</script>
+
+<script type="text/javascript" src="js/menu.js"></script>
+<div class="collection hide" id="menu" style="background-color:  rgba(0, 0, 0, 0.5);">
+  <a href="https://www.byfone.com/#home" class="collection-item" onclick="menu('hide')"
+    style="color: #fff;background-color:  rgba(0, 0, 0, 0.5);">Home</a>
+  <a href="https://www.byfone.com/#ourservices" class="collection-item" onclick="menu('hide')"
+    style="color: #fff;background-color:  rgba(0, 0, 0, 0.5);">Services</a>
+  <a href="https://www.byfone.com/works" class="collection-item" onclick="menu('hide')"
+    style="color: #fff;background-color:  rgba(0, 0, 0, 0.5);">Work with us</a>
+  <a href="https://www.byfone.com/##contactus" class="collection-item" onclick="menu('hide')"
+    style="color: #fff;background-color:  rgba(0, 0, 0, 0.5);">Contact Us</a>
+  <a class='dropdown-trigger' data-target='dropdown1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ENG</a>
+</div>
+</nav>
+
+<ul id='dropdown1' class='dropdown-content'>
+  <li>
+    <h4 onclick="translates('EN')">ENG</h4>
+  </li>
+  <li>
+    <h4 onclick="translates('ES')">ESP</h4>
+  </li>
+</ul>
+
+
+
+
+
+
+
+<!--||-->
+
+
+
+
+  <div class="carousel carousel-slider center">
+    <div class="carousel-fixed-item center">
+    </div>
+
+    <div class="carousel-item white-text" href="#one!">
+
+      <div class="centertext" data-aos="fade-up">
+        <div class="hide-on-med-and-down"><br><br><br></div>
+        <h4>We supplement your current support network with high-quality services and solutions that fits your budget
+          and
+          expectations.</h4>
+        <br> <br>
+        <a href="#contactus" class="btn waves-effect  white-text darken-text-2 contactusbtn btn-large"
+          data-aos="fade-up" style="border-radius: 25px">Contact Us</a>
+      </div>
+
+      <img src="img/women-1209678.jpg" alt="Contact center solution" style="
+      object-fit: cover;
+  width: 100%;
+  height: 100vh;">
+    </div>
+    <div class="carousel-item white-text" href="#two!">
+
+
+      <div class="centertext" data-aos="fade-up">
+        <div class="hide-on-med-and-down"><br><br><br></div>
+        <h4>Start growing your business by working with us. We provide the necessary staffing solutions your company needs right now.
+        </h4>
+        <p></p>
+        <br> <br>
+        <a href="#whybyfone" class="btn waves-effect  white-text darken-text-2 contactusbtn btn-large"
+          data-aos="fade-up" style="border-radius: 25px">Learn more</a>
+      </div>
+
+
+      <img src="img/stock-1863880.jpg" alt="Data entry, solutions tailored for you" style="
+      object-fit: cover;
+  width: 100%;
+  height: 100vh;">
+    </div>
+    <div class="carousel-item white-text" href="#three!">
+
+
+
+      <div class="centertext" data-aos="fade-up">
+        <div class="hide-on-med-and-down"><br><br><br></div>
+        <h4>Build a career with us. We are looking for people just like you, our team is a great place to continually
+          grow and fulfill your professional goals</h4>
+
+        <br> <br>
+        <a href="#workwithus" class="btn waves-effect  white-text darken-text-2 contactusbtn btn-large"
+          data-aos="fade-up" style="border-radius: 25px">Work with us</a>   
+      </div>
+
+
+      <img src="img/office-865091.jpg" alt="Back office solutions" style="
+      object-fit: cover;
+  width: 100%;
+  height: 100vh;">
+    </div>
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="ourservices">&nbsp;</section>
+
+<br>
+
+
+
+
+<div class="container">
+  <h3 class="center" data-aos="fade-up"><span class="txtorange">Terminos y</span> <span class="txtorange">Condiciones</span>
+  </h3>
+
+
+  <!---
+  
+
+    recuerda que: <br> = salto de linea
+                  <img src="URL"> = añadir imagen al texto
+  
+  
+  -->
+
+  <h6 class="center sub" data-aos="fade-up" style="text-align: justify;">
+    
+    en esta parte se escriben los terminos y condiciones de el formato Ingles
+  
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet laboriosam necessitatibus 
+    ipsum, molestias fugit minima ex dolore saepe odio eaque officia veniam perferendis temporibus 
+    reiciendis inventore quaerat unde, natus magni. <br>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur similique earum blanditiis 
+    laborum a, labore libero autem itaque maiores accusamus unde officiis rem at quod iusto 
+    obcaecati, neque recusandae ex. <br><br>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Id voluptas voluptatum exercitationem 
+    officia maiores beatae eum facilis unde, cupiditate sapiente quos optio omnis eaque, quod quam 
+    assumenda voluptate maxime adipisci.
+  
+  </h6>
+  <p class="center"></p>
+</div>
+<br><br><br><br><br><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <footer class="page-footer" style="background-color: #494949">
+    <div class="container">
+
+
+      <div class="row ">
+        <div class="col s12 m4 "><br>
+          <h3 style="font-weight: bold;
+  font-family: 'Hammersmith One', sans-serif;
+  color: #888888;
+  text-align: center;">START GROWING YOUR BUSINESS TODAY</h3>
+
+        </div>
+        <div class="col s12 m3"><br><br>
+          <h5 style="font-weight: bold;
+  font-family: 'Benne', sans-serif;
+  color: #888888;
+  ">ByFone, USA </h5>
+          <p>1274 Fulton Street <br>
+            Brooklyn, NY 11216<br>
+            EMAIL: support@byfone.com<br>
+          </p>
+        </div>
+        <div class="col s12 m3"><br><br>
+
+        <h5 style="font-weight: bold;
+  font-family: 'Benne', sans-serif;
+  color: #888888;
+  ">ByFone, SAS </h5>
+          <p>
+            Cra 43A # 8 Sur - 15<br>
+            Medellín, Antioquia 050022<br>
+            EMAIL: support@byfone.com<br>
+
+          </p>
+        </div>
+        <div class="col s12 m2">
+          <center>
+          <!--/  foto de el logo footer fondo /-->
+           <br><br> <img src="img/ESCALA DE GRISES.png" alt="ByFone Logo" width="100%">
+
+            <h5 style="font-weight: bold;
+  font-family: 'Benne', sans-serif;
+  color: #888888;
+  ">Follow us</h5>
+            <a href="https://www.facebook.com/ByFone-Inc-104101941916829/?ref=pages_you_manage" target="_blank"><img
+                src="https://img.icons8.com/small/35/ffffff/facebook.png" alt="Facebook Logo" /></a>
+            <a href="https://instagram.com/byfone_inc?utm_medium=copy_link" target="_blank"><img
+                src="https://img.icons8.com/small/35/ffffff/instagram-new.png" alt="Instagram Logo" /></a>
+            <a href="https://www.linkedin.com/company/byfone-inc/mycompany/?viewAsMember=true" target="_blank"><img
+                src="https://img.icons8.com/small/35/ffffff/linkedin.png" alt="LinkedIn Logo" /></a>
+          </center>
+        </div>
+      </div>
+
+
+
+
+    </div>
+    <div class="footer-copyright" style="background-color: #363636;">
+      <div class="container hide-on-med-and-down">
+        © 2021 ByFone Inc.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a class="grey-text right" target="_blank" href="tyc/PrivacyPolicies.pdf">Privacy policies</a>
+        <a class="grey-text" href="#">Terms and Conditions</a>
+      </div>
+      <div class="container hide-on-large-only">
+        © 2021 ByFone Inc.
+        <a class="grey-text"  target="_blank" href="tyc/PrivacyPolicies.pdf">Privacy policies</a>&nbsp;&nbsp;
+        <a class="grey-text" href="#">T&C</a>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3DXRT3EN3R"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-3DXRT3EN3R');
+
+   
+    function setCookie(cname, cvalue, exdays) {
+        const d = new Date();
+        d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+        let expires = "expires=" + d.toUTCString();
+        document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+      }
+
+
+    function getCookie(cname) {
+        let name = cname + "=";
+        let decodedCookie = decodeURIComponent(document.cookie);
+        let ca = decodedCookie.split(';');
+        for (let i = 0; i < ca.length; i++) {
+          let c = ca[i];
+          while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+          }
+          if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+          }
+        }
+        return "";
+      }
+
+      function cook(){ 
+        setCookie("validate", "true", 9999);
+        alert(getCookie("validate"));
+      }
+//
+//acceptcookie()
+      function showcookies(){
+        
+var tarjeta = `
+<div class="card " style="	position: fixed;
+	bottom: 0%;
+	left: 0%;
+	right: 0%;
+	">
+  <div class="card-content ">
+    <span class="card-title">COOKIE POLICIES</span>
+    <p>We use own and third party cookies to improve the user experience through your navigation. If you continue
+      browsing you
+      accept their use. Learn more</p>
+  </div>
+  <div class="card-action">
+    <a onclick="acceptcookie()">accept cookies</a>
+<a href="#">exit</a>
+</div>
+</div>
+`;
+
+if (getCookie("val")=="") {
+  document.getElementById('cookies').innerHTML = tarjeta;
+  console.log('la cookie existe')
+}
+      }
+
+function acceptcookie(){ 
+  setCookie("val", "true", 9999);
+  document.getElementById('cookies').innerHTML = "";
+  console.log('la cookie se creo')
+}
+
+
+  showcookies();
+  </script>
+
+
+
+  <!--JavaScript at end of body for optimized loading-->
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+</body>
+
+
+</html>

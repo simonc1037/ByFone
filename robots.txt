@@ -1,0 +1,8 @@
+User-agent: Unnecessarybot
+Disallow: / https://www.byfone.com/data.html
+Disallow: / https://www.byfone.com/#!
+
+User-agent: *
+Allow: / https://www.byfone.com/
+
+Sitemap: https://byfone.com/sitemap.xml
